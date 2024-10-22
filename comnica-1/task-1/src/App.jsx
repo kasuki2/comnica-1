@@ -1,10 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 import Header from "./components/header";
 import TitlePanel from "./components/TitlePanel";
 import rocket from "./assets/rocket-3d-sm.webp";
+import ButtonComp from "./components/ButtonComp";
+
 function App() {
   return (
     <>
@@ -29,12 +29,17 @@ function App() {
       </div>
       <div className="right-segment">
         <div className="vertical-wrap-1">
-          <TitlePanel
-            title="Üdvözlöm a Comnica Signature-ben!"
-            text="A következőkben végigvezetjük dokumentumai elfogadásán és aláírásán. 
+          <div className="sub-panel">
+            <TitlePanel
+              title="Üdvözlöm a Comnica Signature-ben!"
+              text="A következőkben végigvezetjük dokumentumai elfogadásán és aláírásán. 
             A folyamat több percet is igénybe vehet, ezért kérjük, csak akkor kezdje el, ha készen áll rá."
-            cls="sub-panel"
-          />
+            />
+            <ButtonComp
+              title="click me and I'll write on the console"
+              text="kezdhetjük"
+            />
+          </div>
         </div>
       </div>
     </>
