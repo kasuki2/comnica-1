@@ -1,12 +1,16 @@
 # comnica-1
+A négy feladat megoldása:
 
 1.
-a task-1 mappában van a megoldás React.js-ben.
+a task-1 mappában van a megoldás React.js-ben, vite-tel.
+a task-1 mappában:
+npm install
+npm run dev
 
 2. 
 a task-2 mappában:
-az index.html tartalmazza a JavaScript függvényt, ami lekérdezi a képzeletbeli api-t, de
-a backend valódi.
+az index.html tartalmazza a JavaScript függvényt, ami lekérdezi a képzeletbeli api-t, 
+bár a backend valódi.
 
 
 3.  Adott egy gomb. Elvileg minden rendben kód szinten, mégsem csinál semmit se hover, 
