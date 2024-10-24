@@ -24,11 +24,11 @@
         
         try {
           const names = await getApiData(
-            "http://comnica.homio.link/api/v1/names.php"
+            "https://comnica.homio.link/api/v1/names.php"
           );
 
           const colors = await getApiData(
-            "http://comnica.homio.link/api/v1/colors.php"
+            "https://comnica.homio.link/api/v1/colors.php"
           );
 
           names.map((name, i) => {

@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Header from "./components/header";
 import TitlePanel from "./components/TitlePanel";

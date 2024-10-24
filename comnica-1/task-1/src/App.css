@@ -2,9 +2,9 @@
   --text-color: #31363c;
   --green-trans-1: #29a98b70;
   --green-trans-2: #29a98b30;
-  --title-green: #20876f;
+  --title-green: #186553;
   --green-3: #20876f;
-  --green-3-hover: #236858;
+  --green-3-hover: #186553;
   --button-text: #efefef;
 }
 
@@ -31,11 +31,11 @@
 .right-segment {
   flex-basis: 34%;
   background-color: var(--green-trans-2);
-  padding-top: 60px;
+  padding-top: 3.7rem;
 }
 
 .header-wrap {
-  min-height: 60px;
+  min-height: 3.7rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,7 +54,7 @@
 .left-part {
   flex-basis: 50%;
   box-sizing: border-box;
-  padding: 0 1rem 0 2rem;
+  padding: 0 1rem 0 4rem;
 }
 .right-part {
   flex-basis: 50%;
@@ -70,8 +70,6 @@
   top: 25%;
 }
 
-.title-panel {
-}
 .title-panel h2 {
   margin: 0;
   color: var(--title-green);
@@ -90,6 +88,7 @@
 .sub-panel h2 {
   margin: 0;
   color: #682c5d;
+  font-size: 1.2rem;
 }
 .sub-panel p {
   margin: 0;
@@ -99,26 +98,16 @@
 .button-rounded {
   text-transform: uppercase;
   border-style: none;
-  padding: 0.6rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 1.4rem;
   background-color: var(--green-3);
   color: var(--button-text);
   cursor: pointer;
   align-self: flex-start;
+  font-weight: 700;
 }
 .button-rounded:hover {
   background-color: var(--green-3-hover);
-}
-
-@media only screen and (max-width: 1100px) {
-  .left-part {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  .right-part {
-    flex-basis: 100%;
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -129,5 +118,19 @@
   .right-segment {
     flex-basis: 100%;
     padding-bottom: 4rem;
+    padding-top: 2rem;
+  }
+
+  .left-part {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+  }
+  .right-part {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .vertical-wrap-1 {
+    top: 0;
   }
 }
