@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      const getApiData = async (url) => {
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+          }
+
+          return await response.json();
+        } catch (error) {
+          console.error(error.message);
+          throw error;
+        }
+      };
+
+      const getData = async () => {
+        
+        try {
+          const names = await getApiData(
+            "http://comnica.homio.link/api/v1/names.php"
+          );
+
+          const colors = await getApiData(
+            "http://comnica.homio.link/api/v1/colors.php"
+          );
+
+          names.map((name, i) => {
+            name.color = colors[i];
+          });
+          console.log("names and colors");
+          console.log(names);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    </script>
+  </head>
+  <body>
+    Names and colors
+    <button onclick="getData()">Click here to get the data</button>
+  </body>
+</html>
